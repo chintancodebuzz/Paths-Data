@@ -2,15 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import plusicon from "../../../assets/images/plus.png";
 import filter from "../../../assets/images/filter.png";
-import upicon from "../../../assets/images/upIcon.png";
-import downicon from "../../../assets/images/downIcon.png";
-import checkedIcon from "../../../assets/images/checked.png";
-import uncheckIcon from "../../../assets/images/unchecked.svg";
 import editbtn from "../../../assets/images/edit-btn.png";
 import deletebtn from "../../../assets/images/delete-btn.png";
-import organization_family from "../../../assets/images/organization_family.png";
-import CreateRoles from "../../../components/Models/Users/Roles/CreateRoles";
+import CreateRoles from "../../../components/models/Users/Roles/CreateRoles";
 import searchIcon from "../../../assets/images/search.png";
+import "../../../styles/tables.css";
 
 const initialState = {
   createUser: false,

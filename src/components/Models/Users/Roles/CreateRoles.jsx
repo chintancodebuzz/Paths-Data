@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import "../OTPVerify.css";
-
+import "../../../../styles/buttons.css";
+import "../../../../styles/forms.css";
 const initialState = {
   name: "",
   description_id: "",

@@ -1,0 +1,476 @@
+/* Button Styles */
+.save-btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(76, 112, 255, 1);
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-family: var(--popping);
+}
+
+.save-btn:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.save-btn.loading {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.cancel-btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-family: var(--popping);
+    background: transparent;
+    border: 1px solid rgba(76, 112, 255, 1);
+}
+
+.save-button {
+    font-family: var(--popping);
+    font-size: 14px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #4361EE 0%, #9ca9ee 100%);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 17px 22px;
+    width: 200px;
+    max-width: 200px;
+}
+
+.save-button:hover {
+    background: linear-gradient(90deg, #738BFF 0%, #4361EE 100%);
+}
+
+.save-button.loading {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.cancel-button {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-family: var(--popping);
+    background: transparent;
+    border: 1px solid #738BFF;
+    transition: all 0.3s ease;
+    width: 200px;
+    max-width: 200px;
+}
+
+.layout .content .outlet .add-btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(76, 112, 255, 1);
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-family: var(--popping);
+    display: flex;
+    align-items: center;
+}
+
+.content-section .top .add-btn {
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(76, 112, 255, 1);
+    border-radius: 10px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.content-section .second .fisrt .add-btn {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    background: #4c70ff;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-family: var(--popping);
+    display: flex;
+    align-items: center;
+}
+
+.edit-btn {
+    background: rgba(0, 198, 7, 1) !important;
+}
+
+.delete-btn {
+    background: rgba(220, 53, 69, 1) !important;
+}
+
+.delete-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.crawler-btn {
+    background: rgba(13, 26, 80, 1) !important;
+}
+
+.version-btn {
+    background: rgba(12, 15, 45, 1) !important;
+}
+
+.back-home-btn {
+    font-family: var(--popping);
+    font-size: 15px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #4361EE 0%, #738BFF 100%);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 17px 22px;
+}
+
+.journy-btn {
+    font-family: var(--popping);
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #4361EE 0%, #738BFF 100%);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 17px 22px;
+}
+
+.journy-btn:hover {
+    background: linear-gradient(90deg, #738BFF 0%, #4361EE 100%);
+}
+
+.leave {
+    background: #ff1616;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 18px;
+    font-family: var(--popping);
+}
+
+.accept {
+    background: #00e300;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 18px;
+    font-family: var(--popping);
+}
+.close-btn {
+    background-color: #4B68F0;
+    padding: 20px;
+}
+
+.read-more-btn {
+    background: #4c70ff;
+    padding: 10px;
+    color: #fff;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .save-btn,
+    .cancel-btn {
+        font-size: 13px;
+        padding: 11px 22px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 13px;
+        padding: 15px 20px;
+        width: 180px;
+        max-width: 180px;
+    }
+
+    .layout .content .outlet .add-btn {
+        font-size: 13px;
+        padding: 11px 16px;
+    }
+
+    .content-section .top .add-btn {
+        height: 48px;
+        font-size: 15px;
+        padding: 11px 16px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 13px;
+        padding: 11px 16px;
+    }
+
+    .journy-btn {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .back-home-btn {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .save-btn,
+    .cancel-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 12px;
+        padding: 14px 18px;
+        width: 160px;
+        max-width: 160px;
+    }
+
+    .layout .content .outlet .add-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .content-section .top .add-btn {
+        height: 45px;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .journy-btn {
+        font-size: 15px;
+        padding: 14px 18px;
+    }
+
+    .back-home-btn {
+        font-size: 13px;
+        padding: 14px 18px;
+    }
+
+    .leave,
+    .accept {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .save-btn,
+    .cancel-btn {
+        font-size: 11px;
+        padding: 9px 18px;
+        border-radius: 8px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 11px;
+        padding: 12px 16px;
+        width: 140px;
+        max-width: 140px;
+        border-radius: 10px;
+    }
+
+    .layout .content .outlet .add-btn {
+        font-size: 11px;
+        padding: 9px 14px;
+        border-radius: 8px;
+    }
+
+    .content-section .top .add-btn {
+        height: 42px;
+        font-size: 13px;
+        padding: 9px 14px;
+        border-radius: 8px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 11px;
+        padding: 9px 14px;
+        border-radius: 8px;
+    }
+
+    .journy-btn {
+        font-size: 14px;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+
+    .back-home-btn {
+        font-size: 12px;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+
+    .leave,
+    .accept {
+        font-size: 12px;
+        padding: 9px 14px;
+        border-radius: 8px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .save-btn,
+    .cancel-btn {
+        font-size: 10px;
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 10px;
+        padding: 10px 14px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .layout .content .outlet .add-btn {
+        font-size: 10px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .content-section .top .add-btn {
+        height: 40px;
+        font-size: 12px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 10px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .journy-btn {
+        font-size: 13px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .back-home-btn {
+        font-size: 11px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .leave,
+    .accept {
+        font-size: 11px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .save-btn,
+    .cancel-btn {
+        font-size: 9px;
+        padding: 7px 14px;
+        border-radius: 6px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 9px;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+
+    .layout .content .outlet .add-btn {
+        font-size: 9px;
+        padding: 7px 10px;
+        border-radius: 6px;
+    }
+
+    .content-section .top .add-btn {
+        height: 38px;
+        font-size: 11px;
+        padding: 7px 10px;
+        border-radius: 6px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 9px;
+        padding: 7px 10px;
+        border-radius: 6px;
+    }
+
+    .journy-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+
+    .back-home-btn {
+        font-size: 10px;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+
+    .leave,
+    .accept {
+        font-size: 10px;
+        padding: 7px 10px;
+        border-radius: 6px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .save-btn,
+    .cancel-btn {
+        font-size: 8px;
+        padding: 6px 12px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 8px;
+        padding: 7px 10px;
+    }
+
+    .content-section .top .add-btn {
+        height: 36px;
+        font-size: 10px;
+    }
+}
+
+

@@ -9,7 +9,8 @@ import { createNetwork } from "../../services/api";
 // import EditSubnet from "../../Components/Modal/Subnet/EditSubnet";
 // import EditSecurityGroup from "../../Components/Modal/SecurityGroup/EditSecurityGroup";
 import left_arrow from "../../assets/images/nvigation_arrows/left_arrow.png";
-
+import "../../styles/cluster.css";
+import "../../styles/forms.css";
 const AddNetwork = () => {
   const navigate = useNavigate();
   // Support both workspace_id (new) and family_id (legacy) for backward compatibility

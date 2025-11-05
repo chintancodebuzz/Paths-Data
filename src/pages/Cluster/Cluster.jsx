@@ -7,7 +7,8 @@ import deletebtn from "../../assets/images/delete-btn.png";
 import organization_family from "../../assets/images/organization_family.png";
 import searchIcon from "../../assets/images/search.png";
 import workspaceArrow from "../../assets/images/workspace_arrow.png";
-
+import "../../styles/cluster.css";
+import "../../styles/tables.css";
 const Cluster = () => {
   const navigate = useNavigate();
 

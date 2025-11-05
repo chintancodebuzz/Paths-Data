@@ -1,0 +1,463 @@
+/* Form Styles */
+.form-label {
+    font-family: var(--popping);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 12px;
+}
+
+.add-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.add-input input,
+.add-input select {
+    font-family: var(--popping);
+    padding: 15px 18px;
+    border: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: #010317;
+    border-radius: 10px;
+    font-size: 14px !important;
+    font-weight: 400;
+    height: 100%;
+}
+
+.add-input select:focus,
+.add-input input:focus {
+    outline: none;
+    color: #B4B4B4;
+}
+
+.add-input select::placeholder,
+.add-input input::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.add-textara {
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+.add-textara .textara-view {
+    height: 150px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: #010317;
+    border-radius: 10px;
+    font-size: 14px !important;
+    font-weight: 400;
+    outline: none;
+    border: 0;
+    font-family: var(--popping);
+    padding: 15px 18px;
+}
+
+.add-textara .textara-view::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.security-select {
+    height: 150px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(4, 9, 32, 1) !important;
+    border-radius: 10px;
+    font-size: 14px !important;
+    font-weight: 400;
+    outline: none;
+    border: 0;
+    font-family: var(--popping);
+    padding: 15px 18px;
+}
+
+.css-l6wkuz-control {
+    background-color: #010317 !important;
+}
+
+.css-l6wkuz-control:hover {
+    background-color: #010317 !important;
+}
+
+.css-l6wkuz-control:focus {
+    background-color: #010317 !important;
+}
+
+.file-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-input {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(4, 9, 32, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.file-input:hover {
+    border-color: #888;
+}
+
+.custom-input {
+    background-color: transparent;
+    border: 1px solid #ffffff50;
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: white;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ffffffcc;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 10px !important;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #000AFF !important;
+    border-color: #000AFF !important;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px !important;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #000AFF !important;
+    background-color: #e6f0ff;
+}
+
+table input[type="checkbox"] {
+    margin: 0;
+}
+
+.custom-checkbox {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.custom-checkbox.checked {
+    border-color: #000AFF;
+}
+
+.custom-checkbox.checked .checkmark {
+    width: 30px;
+    height: 30px;
+    color: #000AFF;
+    font-weight: bold;
+    stroke-width: 3;
+}
+
+.checkmark {
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox-view {
+    cursor: pointer;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .form-label {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .add-input input,
+    .add-input select {
+        padding: 13px 16px;
+        font-size: 13px !important;
+    }
+
+    .add-textara .textara-view {
+        height: 140px;
+        padding: 13px 16px;
+        font-size: 13px !important;
+    }
+
+    .security-select {
+        height: 140px;
+        padding: 13px 16px;
+        font-size: 13px !important;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .form-label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .add-input input,
+    .add-input select {
+        padding: 12px 15px;
+        font-size: 13px !important;
+    }
+
+    .add-textara .textara-view {
+        height: 130px;
+        padding: 12px 15px;
+        font-size: 13px !important;
+    }
+
+    .security-select {
+        height: 130px;
+        padding: 12px 15px;
+        font-size: 13px !important;
+    }
+
+    .custom-input {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        width: 8px;
+        height: 8px;
+        top: 3px;
+        left: 3px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .form-label {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .add-input input,
+    .add-input select {
+        padding: 11px 14px;
+        font-size: 12px !important;
+        border-radius: 8px;
+    }
+
+    .add-textara .textara-view {
+        height: 120px;
+        padding: 11px 14px;
+        font-size: 12px !important;
+        border-radius: 8px;
+    }
+
+    .security-select {
+        height: 120px;
+        padding: 11px 14px;
+        font-size: 12px !important;
+        border-radius: 8px;
+    }
+
+    .custom-input {
+        padding: 9px 12px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        width: 7px;
+        height: 7px;
+        top: 3px;
+        left: 3px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .form-label {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    .add-input input,
+    .add-input select {
+        padding: 10px 12px;
+        font-size: 11px !important;
+        border-radius: 8px;
+    }
+
+    .add-textara .textara-view {
+        height: 110px;
+        padding: 10px 12px;
+        font-size: 11px !important;
+        border-radius: 8px;
+    }
+
+    .security-select {
+        height: 110px;
+        padding: 10px 12px;
+        font-size: 11px !important;
+        border-radius: 8px;
+    }
+
+    .custom-input {
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 8px;
+    }
+
+    input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        width: 6px;
+        height: 6px;
+        top: 3px;
+        left: 3px;
+    }
+
+    .custom-checkbox {
+        width: 24px;
+        height: 24px;
+    }
+
+    .checkmark {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .form-label {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .add-input input,
+    .add-input select {
+        padding: 8px 10px;
+        font-size: 10px !important;
+        border-radius: 6px;
+    }
+
+    .add-textara .textara-view {
+        height: 100px;
+        padding: 8px 10px;
+        font-size: 10px !important;
+        border-radius: 6px;
+    }
+
+    .security-select {
+        height: 100px;
+        padding: 8px 10px;
+        font-size: 10px !important;
+        border-radius: 6px;
+    }
+
+    .custom-input {
+        padding: 7px 9px;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        width: 5px;
+        height: 5px;
+        top: 2px;
+        left: 2px;
+    }
+
+    .custom-checkbox {
+        width: 22px;
+        height: 22px;
+    }
+
+    .checkmark {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .form-label {
+        font-size: 10px;
+    }
+
+    .add-input input,
+    .add-input select {
+        padding: 7px 9px;
+        font-size: 9px !important;
+    }
+
+    .add-textara .textara-view {
+        height: 90px;
+        padding: 7px 9px;
+        font-size: 9px !important;
+    }
+
+    .security-select {
+        height: 90px;
+        padding: 7px 9px;
+        font-size: 9px !important;
+    }
+}
+

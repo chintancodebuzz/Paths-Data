@@ -2,8 +2,13 @@ import editbtn from "../../assets/images/edit-btn.png";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
-import { getProfile, getSubscription, deleteSubscription } from "../../services/api";
-
+import {
+  getProfile,
+  getSubscription,
+  deleteSubscription,
+} from "../../services/api";
+import "../../styles/setting.css";
+import "../../styles/forms.css";
 const Setting = () => {
   const navigate = useNavigate();
 
@@ -58,7 +63,9 @@ const Setting = () => {
     try {
       const res = await deleteSubscription();
       if (res?.data?.statusCode === 200 || res?.data) {
-        toast.success(res.data?.message || "Subscription cancelled successfully");
+        toast.success(
+          res.data?.message || "Subscription cancelled successfully"
+        );
         GetSubscriptionData();
       }
     } catch (err) {

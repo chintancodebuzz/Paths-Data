@@ -1,4 +1,5 @@
 import { Modal } from "react-bootstrap";
+import "../../../styles/modals.css";
 
 const Logout = ({ show, handleClose, handleLogout, isLogoutLoading }) => {
 

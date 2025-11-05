@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Sidebar from "../ui/Sidebar";
-import Header from "../pages/Header/Header";
-import Logout from "../components/Models/Logout/Logout";
+import Header from "../pages/header/Header";
+import Logout from "../components/models/logout/Logout";
 
 const DashboardLayout = () => {
   const navigate = useNavigate();
@@ -15,6 +15,7 @@ const DashboardLayout = () => {
   }, [token]);
 
   const [mobileToggle, setMobileToggle] = useState(false);
+  console.log("🚀 ~ DashboardLayout ~ mobileToggle:", mobileToggle);
   const [show, setShow] = useState(false);
   const [isLogouLoading, setIsLogouLoading] = useState(false);
 

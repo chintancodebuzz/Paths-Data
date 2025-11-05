@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "../../styles/cluster.css";
+import "../../styles/tables.css";
 
 import filter from "../../assets/images/filter.png";
 import disabled from "../../assets/images/disabled.png";
 import pauseIcon from "../../assets/images/pause.png"; // running state
 import videoIcon from "../../assets/images/video.png"; // stopped state
 // import Delet eVpc from "../Modal/Delete/DeleteVpc";
+import left_arrow from "../../assets/images/nvigation_arrows/left_arrow.png";
 
 const ClusterDetails = () => {
   const { id } = useParams();
@@ -69,48 +72,60 @@ const ClusterDetails = () => {
         </div>
       )}
 
-      <div className={`cluster_detail`}>
-        <div className="add-section row">
-          <div className="col-lg-12">
-            <p className="add-title">{getClusterDetail?.cluster_name}</p>
-          </div>
+      <div className="cluster_detail">
+        <div className="cluster_inner_detail">
+          <div className="add-section row">
+            <div className="col-lg-12">
+              <div className="workspace-header">
+                <h1 className="workspace-title">Test Cluster 1</h1>
+                <button
+                  className="back-button"
+                  onClick={() => navigate("/dashboard/workspace")}
+                >
+                  <img src={left_arrow} alt="Back" />
+                  <span>Back</span>
+                </button>
+              </div>
+              {/* <p className="add-title">{getClusterDetail?.cluster_name} Test Cluster 1</p> */}
+            </div>
 
-          <div className="top_btn mt-2">
-            {getClusterDetail?.status !== "terminated" && (
-              <button
-                type="button"
-                className="detail-btn"
-                style={{ padding: "14px" }}
-                onClick={() => setShow(true)}
-              >
-                <img src={disabled} className="img-fluid me-2" alt="" />
-                Terminate
-              </button>
-            )}
+            <div className="top_btn mt-2">
+              {getClusterDetail?.status !== "terminated" && (
+                <button
+                  type="button"
+                  className="detail-btn"
+                  style={{ padding: "14px" }}
+                  onClick={() => setShow(true)}
+                >
+                  <img src={disabled} className="img-fluid me-2" alt="" />
+                  Terminate
+                </button>
+              )}
 
-            {(getClusterDetail?.status === "running" ||
-              getClusterDetail?.status === "stopped") && (
-              <button
-                type="button"
-                className="detail-btn"
-                onClick={handleClusterToggle}
-                disabled={loading}
-              >
-                <img
-                  src={
-                    getClusterDetail?.status === "running"
-                      ? pauseIcon
-                      : videoIcon
-                  }
-                  className="img-fluid me-2"
-                  alt={
-                    getClusterDetail?.status === "running" ? "Pause" : "Start"
-                  }
-                  style={{ height: "22px", width: "22px" }}
-                />
-                {getClusterDetail?.status === "running" ? "Stop" : "Start"}
-              </button>
-            )}
+              {(getClusterDetail?.status === "running" ||
+                getClusterDetail?.status === "stopped") && (
+                <button
+                  type="button"
+                  className="detail-btn"
+                  onClick={handleClusterToggle}
+                  disabled={loading}
+                >
+                  <img
+                    src={
+                      getClusterDetail?.status === "running"
+                        ? pauseIcon
+                        : videoIcon
+                    }
+                    className="img-fluid me-2"
+                    alt={
+                      getClusterDetail?.status === "running" ? "Pause" : "Start"
+                    }
+                    style={{ height: "22px", width: "22px" }}
+                  />
+                  {getClusterDetail?.status === "running" ? "Stop" : "Start"}
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -143,7 +158,7 @@ const ClusterDetails = () => {
 
                 {/* ---- Cluster Info ---- */}
                 <div className="second table-responsive mb-3">
-                  <div className="table-title">Cluster</div>
+                  <div className="table-title">Cluster Details</div>
                   <table>
                     <thead>
                       <tr>
@@ -152,10 +167,6 @@ const ClusterDetails = () => {
                         <th>Created By</th>
                         <th>Creation Date</th>
                         <th>Region</th>
-                        <th>
-                          {getClusterDetail?.cluster_type === "distributed" &&
-                            "Auto scaling"}
-                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -183,6 +194,32 @@ const ClusterDetails = () => {
                           })}
                         </td>
                         <td>{getClusterDetail?.region}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  {/* ---- Master ---- */}
+                  <div className="table-title">
+                    {getClusterDetail?.cluster_type === "distributed"} Compute
+                    Resources
+                  </div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Node Type</th>
+                        <th>CPU per Node</th>
+                        <th>Memory per Node</th>
+                        <th>
+                          {getClusterDetail?.cluster_type === "distributed" &&
+                            "Auto scaling"}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{getClusterDetail?.instance_type}</td>
+                        <td>{getClusterDetail?.vcpus}</td>
+                        <td>{getClusterDetail?.memory}</td>
                         <td
                           className={`${
                             getClusterDetail?.asg
@@ -196,35 +233,10 @@ const ClusterDetails = () => {
                     </tbody>
                   </table>
 
-                  {/* ---- Master ---- */}
-                  <div className="table-title">
-                    {getClusterDetail?.cluster_type === "distributed" &&
-                      "Master"}{" "}
-                    Compute Resources
-                  </div>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Node Type</th>
-                        <th>CPU per Node</th>
-                        <th>Memory per Node</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>{getClusterDetail?.instance_type}</td>
-                        <td>{getClusterDetail?.vcpus}</td>
-                        <td>{getClusterDetail?.memory}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
                   {/* ---- Worker ---- */}
                   {getClusterDetail?.cluster_type === "distributed" && (
                     <>
-                      <div className="table-title">
-                        Worker Compute Resources
-                      </div>
+                      <div className="table-title">Storage Configuration </div>
                       <table>
                         <thead>
                           <tr>
@@ -257,9 +269,8 @@ const ClusterDetails = () => {
                   )}
 
                   {/* ---- Master Storage ---- */}
-                  <div className="table-title">
-                    {getClusterDetail?.cluster_type === "distributed" &&
-                      "Master"}{" "}
+                  {/* <div className="table-title">
+                    {getClusterDetail?.cluster_type === "distributed"}{" "}
                     Storage Configuration
                   </div>
                   <table>
@@ -285,10 +296,10 @@ const ClusterDetails = () => {
                         </td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table> */}
 
                   {/* ---- Worker Storage ---- */}
-                  {getClusterDetail?.cluster_type === "distributed" && (
+                  {/* {getClusterDetail?.cluster_type === "distributed" && (
                     <>
                       <div className="table-title">
                         Worker Storage Configuration
@@ -332,7 +343,7 @@ const ClusterDetails = () => {
                         </tbody>
                       </table>
                     </>
-                  )}
+                  )} */}
 
                   {/* ---- Network ---- */}
                   <div className="table-title">Network Settings</div>
@@ -350,6 +361,30 @@ const ClusterDetails = () => {
                       </tr>
                     </tbody>
                   </table>
+
+                  <div className="table-title">Advanced Settings</div>
+                  <div className="table-second">JDBC Connection String</div>
+                  <div className="jdbc-section">
+                    <p>
+                      Use this connection string to connect your applications to
+                      the cluster's database.
+                    </p>
+                    <code className="jdbc-code">
+                      jdbc:postgresql://dbr-pathdata.cluster-vy9121.us-central1.rds.amazonaws.com:5432/pathdata
+                    </code>
+                  </div>
+
+                  {/* Datatitan Instance */}
+                  <div className="table-second">Datatitan Instance</div>
+                  <div className="datatitan-section">
+                    <p>
+                      Reference to the Datatitan instance associated with this
+                      cluster.
+                    </p>
+                    <code className="datatitan-code">
+                      projects/pathdata/locations/us-central1/instances/-1
+                    </code>
+                  </div>
                 </div>
               </div>
             </div>

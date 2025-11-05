@@ -1,0 +1,1086 @@
+/* Table Styles */
+.content-section {
+    margin-inline: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.content-section .top .title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .top .title span {
+    font-family: var(--popping);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .top p {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .top p a {
+    color: rgba(76, 112, 255, 1);
+}
+
+.content-section .second .fisrt .table-title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 26px;
+    background: linear-gradient(90deg, #526ef2 0%, #b5c7ff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.pseudo-search button,
+.pseudo-search i {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.pseudo-search input {
+    border: 0;
+    background-color: transparent;
+    width: 200px;
+    font-family: var(--popping);
+
+}
+
+.pseudo-search input:focus {
+    outline: none;
+}
+
+.pseudo-search button,
+.pseudo-search i {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:before,
+.fa-search:before {
+    content: url("../../assets/images/search.png");
+    /* background-image: url("../assets/images/search.png") !important; */
+    margin-right: 15px;
+}
+
+.pseudo-search {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    /* border: 1px solid rgba(204, 204, 216, 1); */
+    border-radius: 12px;
+    padding: 12px 15px;
+    background: rgba(12, 15, 45, 1);
+
+}
+
+.pseudo-search select {
+    border: none;
+}
+
+.pseudo-search input {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.pseudo-search input::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .second .fisrt .filter {
+    font-family: var(--popping);
+    font-weight: 300;
+    font-size: 13px;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .second .fisrt .pseudo-search {
+    background-color: transparent;
+    border: 1px solid #4c70ff;
+}
+
+.content-section .second .fisrt .pseudo-search .search-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    border-width: 2px;
+}
+
+.content-section .second .fisrt .pseudo-search input {
+    font-family: var(--popping);
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    max-width: auto;
+}
+
+.content-section .second .second {
+    background-color: rgba(1, 3, 23, 1);
+    border-radius: 15px !important;
+}
+
+.content-section .second .schema-top,
+.content-section .second .schema-second {
+    padding-inline: 20px;
+}
+
+.content-section .second .schema-second {
+    padding-bottom: 20px;
+}
+
+.content-section .second .schema-table {
+    background: rgba(1, 3, 23, 1);
+}
+
+.content-section .second .schema-table table tbody td {
+    padding-block: 22px !important;
+}
+
+.content-section .second .second table {
+    width: 100%;
+}
+
+.content-section .second .second table thead tr {}
+
+.content-section .second .second table thead tr th {
+    background-color: rgba(12, 15, 45, 1);
+}
+
+.content-section .second .second table thead th {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 13px;
+    padding-block: 24px;
+    text-transform: uppercase;
+}
+
+.content-section .second .second table tbody tr {
+    border-bottom: 0.1px solid #aeb9e180;
+}
+
+.content-section .second .second table tbody tr:last-child {
+    border: none;
+}
+
+.content-section .second .second table tbody td {
+    padding-block: 35px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .second .second table thead th:first-child,
+.content-section .second .second table tbody td:first-child {
+    padding-right: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 25px;
+}
+
+.content-section .second .second table thead tr th:first-child {
+    background-color: rgba(12, 15, 45, 1);
+    border-bottom-left-radius: 15px;
+    padding-left: 25px;
+}
+
+.content-section .second .second table thead th:last-child {
+    background-color: rgba(12, 15, 45, 1);
+}
+
+.content-section .second .second table thead th:last-child,
+.content-section .second .second table tbody td:last-child {
+    padding-right: 30px;
+    border-bottom-right-radius: 15px;
+    text-align: end;
+}
+
+.content-section .second .second table tbody td a {
+    color: rgba(82, 110, 242, 1);
+    text-decoration: underline;
+}
+
+.content-section .second .second table tbody th {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(35, 45, 66, 1);
+}
+
+.content-section .second .second table thead tr td,
+.content-section .second .second table tbody tr td {
+    width: 200px;
+}
+
+.content-section .second .second.datacatalog-table table thead th:first-child {}
+
+.content-section .second .second.datacatalog-table table thead th:nth-child(2) {}
+
+.content-section .second .second.datacatalog-table table thead th:last-child {}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+table tfoot tr td {
+    padding: 22px 10px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+.sorting {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--popping);
+    font-weight: 300;
+    font-size: 15px;
+    width: fit-content;
+    background: rgba(4, 9, 32, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 25px auto 15px;
+}
+
+.pagination .prev {
+    padding-right: 15px;
+}
+
+.pagination .next {
+    padding-left: 15px;
+}
+
+.prev-btn {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 17.15px;
+    color: rgba(52, 64, 84, 1);
+    border: 1.23px solid rgba(208, 213, 221, 1);
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.page {
+    font-weight: 500;
+    font-size: 17.15px;
+    line-height: 24.5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Button Groups */
+.content-section .second .fisrt .btn-group {
+    border-radius: 10px !important;
+    border: 1px solid #4c70ff;
+}
+
+.content-section .second .fisrt .btn-group .group-add-btn {
+    font-weight: 700;
+    font-size: 13.25px;
+    color: rgba(76, 112, 255, 1);
+    background: rgba(4, 9, 32, 1);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    font-family: var(--popping);
+}
+
+.content-section .second .fisrt .btn-group .group-add-btn.active {
+    background: rgba(76, 112, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-section .second .fisrt .btn-group .group-add-btn:first-child {
+    border-top-left-radius: 8px;
+    border-end-start-radius: 8px;
+}
+
+.content-section .second .fisrt .btn-group .group-add-btn:last-child {
+    border-top-right-radius: 10px;
+    border-end-end-radius: 10px;
+}
+
+.bg-color {
+    background-color: #010317 !important;
+}
+
+.table-info {
+    background: rgba(12, 15, 45, 1);
+    border-radius: 15px;
+}
+
+.btn-group-info {
+    background-color: rgba(4, 9, 32, 1);
+    padding: 5px 15px;
+}
+
+.btn-group-info .group-btn-info {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(4, 9, 32, 1);
+    border-radius: 15px;
+    padding: 12px 30px;
+}
+
+.btn-group-info .group-btn-info.active {
+    color: rgba(76, 112, 255, 1);
+    font-weight: 500;
+}
+
+.btn-group-info .group-btn-info:first-child {
+    border-right: 1px solid rgb(255, 255, 255);
+    padding-left: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-group-info .group-btn-info:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.table-info form {
+    padding-inline: 35px;
+    padding-block: 15px;
+}
+
+.table-info form .col-12 {
+    padding-block: 20px;
+    border-bottom: 1.04px dashed rgba(200, 207, 217, 1);
+}
+
+.table-info form .col-12 .form-label,
+.table-info form .col-12 p {
+    font-weight: 600;
+    font-size: 13.53px;
+}
+
+.table-info form .col-12 .form-label {
+    color: rgba(174, 185, 225, 1);
+}
+
+.table-info form .col-12 p {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 1300px) {
+    .table-info form .col-xxl-2 {
+        width: 20%;
+    }
+}
+
+.table-info form .col-12:nth-last-child(1) {
+    border-bottom: 0;
+}
+
+@media (min-width: 576px) {
+    .table-info form .col-12:nth-last-child(2) {
+        border-bottom: 0;
+    }
+}
+
+@media (min-width: 1299px) {
+
+    .table-info form .col-12:nth-last-child(3),
+    .table-info form .col-12:nth-last-child(4) {
+        border-bottom: 0;
+    }
+}
+
+.custom-bordered-table,
+.custom-bordered-table th,
+.custom-bordered-table td {
+    border: 1px solid #ffffff88;
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default/Desktop Design - No changes */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .content-section {
+        margin-inline: 30px;
+    }
+
+    .content-section .second .fisrt .table-title {
+        font-size: 24px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 12px;
+        padding-block: 20px;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 30px;
+        font-size: 13px;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn {
+        font-size: 12.5px;
+        padding: 10px 16px;
+    }
+
+    .pagination {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .content-section {
+        margin-inline: 25px;
+    }
+
+    .content-section .top .title {
+        font-size: 18px;
+    }
+
+    .content-section .top .title span {
+        font-size: 16px;
+    }
+
+    .content-section .second .fisrt .table-title {
+        font-size: 22px;
+    }
+
+    .content-section .second .fisrt .filter {
+        font-size: 12px;
+    }
+
+    .content-section .second .fisrt .pseudo-search input {
+        font-size: 13px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 11px;
+        padding-block: 18px;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 25px;
+        font-size: 13px;
+    }
+
+    .content-section .second .second table thead th:first-child,
+    .content-section .second .second table tbody td:first-child {
+        padding-left: 20px;
+        padding-right: 12px;
+    }
+
+    .content-section .second .second table thead th:last-child,
+    .content-section .second .second table tbody td:last-child {
+        padding-right: 25px;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    .table-info form {
+        padding-inline: 25px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .content-section {
+        margin-inline: 20px;
+        margin-top: 8px;
+    }
+
+    .content-section .top .title {
+        font-size: 16px;
+    }
+
+    .content-section .top .title span {
+        font-size: 15px;
+    }
+
+    .content-section .top p {
+        font-size: 13px;
+    }
+
+    .content-section .second .fisrt .table-title {
+        font-size: 20px;
+    }
+
+    .content-section .second .fisrt .filter {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .content-section .second .fisrt .pseudo-search {
+        max-width: 200px;
+    }
+
+    .content-section .second .fisrt .pseudo-search input {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .content-section .second .fisrt .pseudo-search .search-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .content-section .second .second table {
+        min-width: 700px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 10px;
+        padding-block: 16px;
+        padding-inline: 12px;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 20px;
+        font-size: 12px;
+        padding-inline: 12px;
+    }
+
+    .content-section .second .second table thead th:first-child,
+    .content-section .second .second table tbody td:first-child {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .content-section .second .second table thead th:last-child,
+    .content-section .second .second table tbody td:last-child {
+        padding-right: 20px;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    .table-info form {
+        padding-inline: 20px;
+        padding-block: 12px;
+    }
+
+    .table-info form .col-12 {
+        padding-block: 15px;
+    }
+
+    .btn-group-info .group-btn-info {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .pagination {
+        font-size: 13px;
+        padding: 10px 16px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .pagination .prev,
+    .pagination .next {
+        padding: 0;
+    }
+
+    .prev-btn {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+
+    .page {
+        font-size: 15px;
+    }
+
+    .content-section .second .schema-top,
+    .content-section .second .schema-second {
+        padding-inline: 15px;
+    }
+
+    .content-section .second .schema-second {
+        padding-bottom: 15px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .content-section {
+        margin-inline: 15px;
+        margin-top: 5px;
+        border-radius: 12px;
+    }
+
+    .content-section .top .title {
+        font-size: 15px;
+    }
+
+    .content-section .top .title span {
+        font-size: 14px;
+    }
+
+    .content-section .top p {
+        font-size: 12px;
+    }
+
+    .content-section .second .fisrt {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content-section .second .fisrt .table-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content-section .second .fisrt .filter {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .content-section .second .fisrt .pseudo-search {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .content-section .second .fisrt .pseudo-search input {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .content-section .second .second {
+        border-radius: 12px !important;
+        overflow-x: auto;
+    }
+
+    .content-section .second .second table {
+        min-width: 650px;
+        font-size: 12px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 9px;
+        padding-block: 14px;
+        padding-inline: 10px;
+        white-space: nowrap;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 18px;
+        font-size: 11px;
+        padding-inline: 10px;
+    }
+
+    .content-section .second .second table thead th:first-child,
+    .content-section .second .second table tbody td:first-child {
+        padding-left: 12px;
+        padding-right: 8px;
+    }
+
+    .content-section .second .second table thead th:last-child,
+    .content-section .second .second table tbody td:last-child {
+        padding-right: 15px;
+    }
+
+    .content-section .second .fisrt .btn-group {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+        flex: 1;
+        min-width: auto;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 11px;
+        padding: 8px 12px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .table-info {
+        border-radius: 12px;
+    }
+
+    .table-info form {
+        padding-inline: 15px;
+        padding-block: 10px;
+    }
+
+    .table-info form .col-12 {
+        padding-block: 12px;
+    }
+
+    .table-info form .col-12 .form-label,
+    .table-info form .col-12 p {
+        font-size: 12px;
+    }
+
+    .btn-group-info {
+        padding: 5px 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn-group-info .group-btn-info {
+        font-size: 11px;
+        padding: 8px 15px;
+        flex: 1;
+        min-width: auto;
+    }
+
+    .btn-group-info .group-btn-info:first-child {
+        border-right: 0;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-radius: 15px 15px 0 0;
+        padding-left: 15px;
+    }
+
+    .btn-group-info .group-btn-info:last-child {
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .pagination {
+        font-size: 12px;
+        padding: 8px 12px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .prev-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .page {
+        font-size: 14px;
+    }
+
+    .content-section .second .schema-top,
+    .content-section .second .schema-second {
+        padding-inline: 12px;
+    }
+
+    .content-section .second .schema-second {
+        padding-bottom: 12px;
+    }
+
+    .content-section .second .schema-table table tbody td {
+        padding-block: 18px !important;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .content-section {
+        margin-inline: 10px;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .content-section .top .title {
+        font-size: 14px;
+    }
+
+    .content-section .top .title span {
+        font-size: 13px;
+    }
+
+    .content-section .top p {
+        font-size: 11px;
+    }
+
+    .content-section .second .fisrt {
+        gap: 12px;
+    }
+
+    .content-section .second .fisrt .table-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .content-section .second .fisrt .filter {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
+
+    .content-section .second .fisrt .pseudo-search {
+        border-radius: 8px;
+    }
+
+    .content-section .second .fisrt .pseudo-search input {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .content-section .second .fisrt .pseudo-search .search-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .content-section .second .second {
+        border-radius: 10px !important;
+    }
+
+    .content-section .second .second table {
+        min-width: 600px;
+        font-size: 11px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 8px;
+        padding-block: 12px;
+        padding-inline: 8px;
+        letter-spacing: 0.3px;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 15px;
+        font-size: 10px;
+        padding-inline: 8px;
+    }
+
+    .content-section .second .second table thead th:first-child,
+    .content-section .second .second table tbody td:first-child {
+        padding-left: 10px;
+        padding-right: 6px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .content-section .second .second table thead th:last-child,
+    .content-section .second .second table tbody td:last-child {
+        padding-right: 12px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .content-section .second .second table thead tr th:first-child {
+        border-bottom-left-radius: 10px;
+        padding-left: 10px;
+    }
+
+    .content-section .second .fisrt .btn-group {
+        border-radius: 8px !important;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn:first-child {
+        border-top-left-radius: 6px;
+        border-end-start-radius: 6px;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn:last-child {
+        border-top-right-radius: 8px;
+        border-end-end-radius: 8px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .table-info {
+        border-radius: 10px;
+    }
+
+    .table-info form {
+        padding-inline: 12px;
+        padding-block: 8px;
+    }
+
+    .table-info form .col-12 {
+        padding-block: 10px;
+    }
+
+    .table-info form .col-12 .form-label,
+    .table-info form .col-12 p {
+        font-size: 11px;
+    }
+
+    .btn-group-info {
+        padding: 4px 8px;
+        border-radius: 10px;
+    }
+
+    .btn-group-info .group-btn-info {
+        font-size: 10px;
+        padding: 6px 12px;
+        border-radius: 10px;
+    }
+
+    .btn-group-info .group-btn-info:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .btn-group-info .group-btn-info:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .pagination {
+        font-size: 11px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+
+    .prev-btn {
+        font-size: 13px;
+        padding: 4px 8px;
+        border-radius: 8px;
+    }
+
+    .page {
+        font-size: 13px;
+    }
+
+    .content-section .second .schema-top,
+    .content-section .second .schema-second {
+        padding-inline: 10px;
+    }
+
+    .content-section .second .schema-second {
+        padding-bottom: 10px;
+    }
+
+    .content-section .second .schema-table table tbody td {
+        padding-block: 15px !important;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    table tfoot tr td {
+        padding: 15px 8px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .content-section {
+        margin-inline: 8px;
+    }
+
+    .content-section .second .fisrt .table-title {
+        font-size: 14px;
+    }
+
+    .content-section .second .second table {
+        min-width: 550px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 7px;
+        padding-block: 10px;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 12px;
+        font-size: 9px;
+    }
+
+    .content-section .second .fisrt .btn-group .group-add-btn {
+        font-size: 8px;
+        padding: 4px 6px;
+    }
+
+    .content-section .second .fisrt .add-btn {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
+
+    .pagination {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .table-info form {
+        padding-inline: 10px;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .content-section {
+        margin-inline: 20px;
+    }
+
+    .content-section .second .second table thead th {
+        font-size: 10px;
+        padding-block: 12px;
+    }
+
+    .content-section .second .second table tbody td {
+        padding-block: 15px;
+        font-size: 11px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .content-section .second .second {
+        background-color: transparent;
+    }
+
+    .content-section .second .second table thead th {
+        background-color: #f0f0f0;
+        color: #000;
+    }
+
+    .content-section .second .second table tbody td {
+        color: #000;
+    }
+
+    .pagination,
+    .content-section .second .fisrt .filter,
+    .content-section .second .fisrt .pseudo-search,
+    .content-section .second .fisrt .add-btn {
+        display: none;
+    }
+}

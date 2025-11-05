@@ -3,7 +3,8 @@ import { Modal } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import { getRoles, updateOrganizationMember, updateWorkspaceMember } from '../../../services/api';
 import { useNavigate } from 'react-router-dom';
-
+import "../../../styles/modals.css";
+import "../../../styles/forms.css";
 const initialState = {
     name: "",
     email_id: "",

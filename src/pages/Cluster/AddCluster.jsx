@@ -2,7 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Select from "react-select";
 import left_arrow from "../../assets/images/nvigation_arrows/left_arrow.png";
-
+import "../../styles/cluster.css";
+import "../../styles/forms.css";
 export const customSelectStyles = {
   control: (provided) => ({
     ...provided,

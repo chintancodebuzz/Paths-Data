@@ -1,0 +1,551 @@
+/* Organization & Family Component Styles */
+.card-box {
+    margin-top: 20px;
+}
+
+.card-box .box {
+    background: rgba(12, 15, 45, 1);
+    border-radius: 14px;
+    padding: 30px 20px;
+}
+
+.card-box .box .main-title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 12px;
+}
+
+.card-box .box .title {
+    font-family: var(--popping);
+    font-weight: 600;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 22px;
+}
+
+.description-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    word-break: break-word;
+}
+
+.card-box .box .desc p {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 16.47px;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.card-box .table_fam {}
+
+.card-box .table_fam table {
+    border-radius: 12px;
+}
+
+.table_fam table td {
+    min-width: 120px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.card-box .table_fam table tbody tr:nth-child(odd) {
+    background: #030625;
+}
+
+.card-box .table_fam table tbody tr:nth-child(even) {}
+
+.card-box .table_fam table tbody tr td {
+    padding-block: 28px;
+    white-space: nowrap;
+}
+
+.card-box .table_fam table tbody tr td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.card-box .table_fam table tbody tr td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.card-box .table_fam table tbody tr td:first-child {
+    padding-left: 20px;
+}
+
+.card-box .table_fam table tbody tr td:last-child {
+    padding-right: 20px;
+}
+
+.card-box .table_fam table tbody tr .title {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #787878;
+    margin-bottom: 22px;
+}
+
+.card-box .table_fam table tbody tr .info {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .card-box .table_fam table tbody tr td {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .card-box .table_fam table tbody tr .title {
+        font-size: 16px;
+    }
+}
+.add-family .data-source-view {
+    padding: 75px 80px;
+}
+
+.add-family .data-source-title {
+    margin-bottom: 5px;
+    font-family: var(--popping);
+}
+
+.add-family .data-source-view span {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.add-family .data-source-view .create-btn {
+    font-family: var(--popping);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #4361EE;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 17px 22px;
+    margin-top: 22px;
+    transition: background-color 0.3s ease;
+}
+
+.add-family .data-source-view .create-btn.attach {
+    background: rgba(6, 9, 32, 1);
+    border: 1px solid rgba(76, 112, 255, 1);
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 18px;
+    font-family: var(--popping);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: #101316;
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(4, 9, 32, 1);
+}
+
+.upload-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.upload-label {
+    cursor: pointer;
+}
+
+.preview-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .card-box .box {
+        padding: 25px 18px;
+    }
+
+    .card-box .box .main-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .card-box .box .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .card-box .box .desc p {
+        font-size: 15px;
+    }
+
+    .card-box .table_fam table tbody tr td {
+        padding-block: 24px;
+    }
+
+    .card-box .table_fam table tbody tr .title {
+        font-size: 16px;
+    }
+
+    .card-box .table_fam table tbody tr .info {
+        font-size: 16px;
+    }
+
+    .add-family .data-source-view {
+        padding: 60px 65px;
+    }
+
+    .add-family .data-source-title {
+        font-size: 22px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .card-box {
+        margin-top: 18px;
+    }
+
+    .card-box .box {
+        padding: 22px 16px;
+        border-radius: 12px;
+    }
+
+    .card-box .box .main-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .card-box .box .title {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .card-box .box .desc p {
+        font-size: 14px;
+    }
+
+    .card-box .table_fam table tbody tr td {
+        padding-block: 22px;
+    }
+
+    .card-box .table_fam table tbody tr .title {
+        font-size: 15px;
+    }
+
+    .card-box .table_fam table tbody tr .info {
+        font-size: 15px;
+    }
+
+    .add-family .data-source-view {
+        padding: 50px 55px;
+        border-radius: 18px;
+    }
+
+    .add-family .data-source-title {
+        font-size: 20px;
+    }
+
+    .add-family .data-source-view span {
+        font-size: 13px;
+    }
+
+    .add-family .data-source-view .create-btn {
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-top: 20px;
+    }
+
+    .file-upload {
+        padding: 13px 16px;
+        font-size: 14px;
+    }
+
+    .upload-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .preview-img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .card-box {
+        margin-top: 15px;
+    }
+
+    .card-box .box {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .card-box .box .main-title {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .card-box .box .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card-box .box .desc p {
+        font-size: 13px;
+    }
+
+    .card-box .table_fam table tbody tr td {
+        padding-block: 20px;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .card-box .table_fam table tbody tr .title {
+        font-size: 14px;
+    }
+
+    .card-box .table_fam table tbody tr .info {
+        font-size: 14px;
+    }
+
+    .add-family .data-source-view {
+        padding: 40px 45px;
+        border-radius: 15px;
+    }
+
+    .add-family .data-source-title {
+        font-size: 18px;
+    }
+
+    .add-family .data-source-view span {
+        font-size: 12px;
+    }
+
+    .add-family .data-source-view .create-btn {
+        font-size: 13px;
+        padding: 12px 18px;
+        margin-top: 18px;
+    }
+
+    .file-upload {
+        padding: 12px 15px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+    .upload-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .preview-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .card-box {
+        margin-top: 12px;
+    }
+
+    .card-box .box {
+        padding: 18px 12px;
+        border-radius: 10px;
+    }
+
+    .card-box .box .main-title {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .card-box .box .title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .card-box .box .desc p {
+        font-size: 12px;
+    }
+
+    .card-box .table_fam table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .card-box .table_fam table tbody tr td {
+        padding-block: 18px;
+        font-size: 12px;
+        white-space: normal;
+        min-width: 100px;
+    }
+
+    .card-box .table_fam table tbody tr .title {
+        font-size: 13px;
+    }
+
+    .card-box .table_fam table tbody tr .info {
+        font-size: 13px;
+    }
+
+    .add-family .data-source-view {
+        padding: 30px 25px;
+        border-radius: 12px;
+    }
+
+    .add-family .data-source-title {
+        font-size: 16px;
+    }
+
+    .add-family .data-source-view span {
+        font-size: 11px;
+    }
+
+    .add-family .data-source-view .create-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .file-upload {
+        padding: 10px 12px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .upload-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .preview-img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .card-box {
+        margin-top: 10px;
+    }
+
+    .card-box .box {
+        padding: 15px 10px;
+        border-radius: 8px;
+    }
+
+    .card-box .box .main-title {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .card-box .box .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .card-box .box .desc p {
+        font-size: 11px;
+    }
+
+    .card-box .table_fam table tbody tr td {
+        padding-block: 15px;
+        font-size: 11px;
+    }
+
+    .card-box .table_fam table tbody tr .title {
+        font-size: 12px;
+    }
+
+    .card-box .table_fam table tbody tr .info {
+        font-size: 12px;
+    }
+
+    .add-family .data-source-view {
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    .add-family .data-source-title {
+        font-size: 14px;
+    }
+
+    .add-family .data-source-view span {
+        font-size: 10px;
+    }
+
+    .add-family .data-source-view .create-btn {
+        font-size: 11px;
+        padding: 8px 12px;
+        margin-top: 12px;
+    }
+
+    .file-upload {
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 6px;
+    }
+
+    .upload-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .preview-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .card-box .box .title {
+        font-size: 14px;
+    }
+
+    .card-box .table_fam table tbody tr td {
+        padding-block: 12px;
+        font-size: 10px;
+    }
+
+    .add-family .data-source-view {
+        padding: 20px 15px;
+    }
+}
+
+

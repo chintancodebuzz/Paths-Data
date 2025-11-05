@@ -3,21 +3,18 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import plusicon from "../../assets/images/plus.png";
 import filter from "../../assets/images/filter.png";
-import upicon from "../../assets/images/upIcon.png";
-import downicon from "../../assets/images/downIcon.png";
-import checkedIcon from "../../assets/images/checked.png";
-import uncheckIcon from "../../assets/images/unchecked.svg";
+
 // import settingbtn from "../../assets/images/setting-btn.png";
 import editbtn from "../../assets/images/edit-btn.png";
 import deletebtn from "../../assets/images/delete-btn.png";
-import organization_family from "../../assets/images/organization_family.png";
-import CreateUsers from "../../components/Models/Users/CreateUsers";
-import EditUsers from "../../components/Models/Users/EditUsers";
+import CreateUsers from "../../components/models/Users/CreateUsers";
+import EditUsers from "../../components/models/Users/EditUsers";
 import searchIcon from "../../assets/images/search.png";
 import {
   listOrganizationMembers,
   removeOrganizationMember
 } from "../../services/api";
+import "../../styles/tables.css";
 
 // import "./WorkspaceCreate.css";
 const initialState = {

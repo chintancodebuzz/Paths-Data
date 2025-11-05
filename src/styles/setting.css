@@ -1,0 +1,623 @@
+/* Setting Component Styles */
+.setting-sec .card {
+    background-color: #0C0F2D;
+    border: 1px solid #0C0F2D;
+    border-radius: 22px;
+    padding: 30px 28px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-sec .card.billing {
+    border: 1px solid #4C70FF;
+    background: transparent;
+}
+
+.setting-sec .title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.setting-sec .plan {
+    font-family: var(--popping);
+    font-weight: 600;
+    font-size: 44px;
+    color: #FFFFFF;
+    margin: 30px 0 18px;
+}
+
+.setting-sec .plan span {
+    font-size: 20px;
+}
+
+.setting-sec p {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 16px;
+    color: #4C70FF;
+}
+
+.setting-sec .billing .details {
+    background-color: #0C0F2D;
+    border-radius: 22px;
+    padding: 20px 20px;
+}
+
+.setting-sec .billing .details .name {
+    font-family: var(--popping);
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.setting-sec .billing .details .date,
+.setting-sec .billing .details .email {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.setting-sec .billing .details .save-btn {
+    padding: 12px 38px;
+}
+
+.setting-sec .setting-form {
+    background: #030625;
+    padding: 35px 35px;
+    border-radius: 15px;
+}
+
+.setting-sec .setting-form .add-title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px !important;
+}
+
+/* Subscription Styles */
+.subscription-content-section {
+    padding: 20px;
+    margin: 45px 25px;
+    margin-top: 20px;
+    background: #0C0F2D;
+    border-radius: 15px;
+}
+
+.subscription-title {
+    font-size: 38px;
+    font-family: var(--popping);
+    color: #fff;
+    font-size: 500;
+    line-height: 136%;
+    padding-bottom: 24px;
+}
+
+.subscription-desc {
+    font-size: 16px;
+    color: #EFEFEF;
+    line-height: 154%;
+    padding-top: 10px;
+}
+
+.subs-title {
+    font-size: 34px;
+    font-family: var(--popping);
+    color: #fff;
+    font-weight: 500;
+    line-height: 92%;
+    padding-bottom: 30px;
+}
+
+.subscription-content-section .feature .name {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 26px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.subscription-content-section .feature p {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.month {
+    font-family: var(--popping);
+    color: #fff;
+    font-size: 20px;
+}
+
+.subscription-detail {
+    background-color: #060920;
+    border-radius: 10px;
+}
+
+.yes {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-family: var(--popping);
+    margin: 0;
+}
+
+.subscription-list {
+    display: flex;
+    padding: 31px 12px;
+    border-bottom: 1px dashed #AEB9E180;
+    border-width: 1px;
+    margin: 0;
+}
+
+.subscription-list.row .col-lg-6 {
+    width: 30%;
+}
+
+.subscription-list:last-child {
+    border-bottom: none;
+}
+
+.edit-profile {
+    width: 100%;
+    max-width: 130px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .setting-sec .card {
+        padding: 25px 24px 18px;
+    }
+
+    .setting-sec .title {
+        font-size: 20px;
+    }
+
+    .setting-sec .plan {
+        font-size: 38px;
+        margin: 25px 0 15px;
+    }
+
+    .setting-sec .setting-form {
+        padding: 30px 30px;
+    }
+
+    .setting-sec .setting-form .add-title {
+        font-size: 22px;
+        margin-bottom: 25px !important;
+    }
+
+    .subscription-content-section {
+        padding: 18px;
+        margin: 40px 20px;
+    }
+
+    .subscription-title {
+        font-size: 34px;
+    }
+
+    .subs-title {
+        font-size: 30px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .setting-sec .card {
+        padding: 22px 20px 16px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .setting-sec .title {
+        font-size: 18px;
+    }
+
+    .setting-sec .plan {
+        font-size: 34px;
+        margin: 20px 0 15px;
+    }
+
+    .setting-sec .plan span {
+        font-size: 18px;
+    }
+
+    .setting-sec p {
+        font-size: 14px;
+    }
+
+    .setting-sec .billing .details {
+        padding: 18px 18px;
+    }
+
+    .setting-sec .billing .details .name {
+        font-size: 16px;
+    }
+
+    .setting-sec .billing .details .date,
+    .setting-sec .billing .details .email {
+        font-size: 13px;
+    }
+
+    .setting-sec .setting-form {
+        padding: 25px 25px;
+    }
+
+    .setting-sec .setting-form .add-title {
+        font-size: 20px;
+        margin-bottom: 25px !important;
+    }
+
+    .subscription-content-section {
+        padding: 15px;
+        margin: 35px 15px;
+    }
+
+    .subscription-title {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .subscription-desc {
+        font-size: 14px;
+    }
+
+    .subs-title {
+        font-size: 28px;
+        padding-bottom: 25px;
+    }
+
+    .subscription-content-section .feature .name {
+        font-size: 22px;
+    }
+
+    .subscription-content-section .feature p {
+        font-size: 16px;
+    }
+
+    .month {
+        font-size: 18px;
+    }
+
+    .yes {
+        font-size: 14px;
+    }
+
+    .subscription-list {
+        padding: 25px 10px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .setting-sec .card {
+        padding: 20px 18px 15px;
+        border-radius: 18px;
+    }
+
+    .setting-sec .title {
+        font-size: 16px;
+    }
+
+    .setting-sec .plan {
+        font-size: 30px;
+        margin: 18px 0 12px;
+    }
+
+    .setting-sec .plan span {
+        font-size: 16px;
+    }
+
+    .setting-sec p {
+        font-size: 13px;
+    }
+
+    .setting-sec .billing .details {
+        padding: 15px 15px;
+        border-radius: 18px;
+    }
+
+    .setting-sec .billing .details .name {
+        font-size: 15px;
+    }
+
+    .setting-sec .billing .details .date,
+    .setting-sec .billing .details .email {
+        font-size: 12px;
+    }
+
+    .setting-sec .billing .details .save-btn {
+        padding: 10px 30px;
+    }
+
+    .setting-sec .setting-form {
+        padding: 20px 20px;
+        border-radius: 12px;
+    }
+
+    .setting-sec .setting-form .add-title {
+        font-size: 18px;
+        margin-bottom: 20px !important;
+    }
+
+    .subscription-content-section {
+        padding: 15px;
+        margin: 30px 12px;
+        border-radius: 12px;
+    }
+
+    .subscription-title {
+        font-size: 26px;
+        padding-bottom: 18px;
+    }
+
+    .subscription-desc {
+        font-size: 13px;
+    }
+
+    .subs-title {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .subscription-content-section .feature .name {
+        font-size: 20px;
+    }
+
+    .subscription-content-section .feature p {
+        font-size: 15px;
+    }
+
+    .month {
+        font-size: 16px;
+    }
+
+    .yes {
+        font-size: 13px;
+    }
+
+    .subscription-list {
+        padding: 20px 8px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscription-list.row .col-lg-6 {
+        width: 100%;
+    }
+
+    .edit-profile {
+        max-width: 120px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .setting-sec .card {
+        padding: 18px 15px 12px;
+        border-radius: 15px;
+        flex-direction: column;
+    }
+
+    .setting-sec .title {
+        font-size: 15px;
+    }
+
+    .setting-sec .plan {
+        font-size: 26px;
+        margin: 15px 0 10px;
+    }
+
+    .setting-sec .plan span {
+        font-size: 14px;
+    }
+
+    .setting-sec p {
+        font-size: 12px;
+    }
+
+    .setting-sec .billing .details {
+        padding: 12px 12px;
+        border-radius: 15px;
+    }
+
+    .setting-sec .billing .details .name {
+        font-size: 14px;
+    }
+
+    .setting-sec .billing .details .date,
+    .setting-sec .billing .details .email {
+        font-size: 11px;
+    }
+
+    .setting-sec .billing .details .save-btn {
+        padding: 8px 24px;
+        font-size: 12px;
+    }
+
+    .setting-sec .setting-form {
+        padding: 18px 15px;
+        border-radius: 12px;
+    }
+
+    .setting-sec .setting-form .add-title {
+        font-size: 16px;
+        margin-bottom: 18px !important;
+    }
+
+    .subscription-content-section {
+        padding: 12px;
+        margin: 25px 10px;
+        border-radius: 12px;
+    }
+
+    .subscription-title {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .subscription-desc {
+        font-size: 12px;
+    }
+
+    .subs-title {
+        font-size: 20px;
+        padding-bottom: 18px;
+    }
+
+    .subscription-content-section .feature .name {
+        font-size: 18px;
+    }
+
+    .subscription-content-section .feature p {
+        font-size: 14px;
+    }
+
+    .month {
+        font-size: 14px;
+    }
+
+    .yes {
+        font-size: 12px;
+    }
+
+    .subscription-list {
+        padding: 15px 6px;
+    }
+
+    .edit-profile {
+        max-width: 100px;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .setting-sec .card {
+        padding: 15px 12px 10px;
+        border-radius: 12px;
+    }
+
+    .setting-sec .title {
+        font-size: 14px;
+    }
+
+    .setting-sec .plan {
+        font-size: 24px;
+        margin: 12px 0 8px;
+    }
+
+    .setting-sec .plan span {
+        font-size: 13px;
+    }
+
+    .setting-sec p {
+        font-size: 11px;
+    }
+
+    .setting-sec .billing .details {
+        padding: 10px 10px;
+        border-radius: 12px;
+    }
+
+    .setting-sec .billing .details .name {
+        font-size: 13px;
+    }
+
+    .setting-sec .billing .details .date,
+    .setting-sec .billing .details .email {
+        font-size: 10px;
+    }
+
+    .setting-sec .billing .details .save-btn {
+        padding: 6px 20px;
+        font-size: 11px;
+    }
+
+    .setting-sec .setting-form {
+        padding: 15px 12px;
+        border-radius: 10px;
+    }
+
+    .setting-sec .setting-form .add-title {
+        font-size: 15px;
+        margin-bottom: 15px !important;
+    }
+
+    .subscription-content-section {
+        padding: 10px;
+        margin: 20px 8px;
+        border-radius: 10px;
+    }
+
+    .subscription-title {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .subscription-desc {
+        font-size: 11px;
+    }
+
+    .subs-title {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+    .subscription-content-section .feature .name {
+        font-size: 16px;
+    }
+
+    .subscription-content-section .feature p {
+        font-size: 13px;
+    }
+
+    .month {
+        font-size: 12px;
+    }
+
+    .yes {
+        font-size: 11px;
+    }
+
+    .subscription-list {
+        padding: 12px 5px;
+    }
+
+    .edit-profile {
+        max-width: 90px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .setting-sec .card {
+        padding: 12px 10px 8px;
+    }
+
+    .setting-sec .plan {
+        font-size: 20px;
+    }
+
+    .subscription-title {
+        font-size: 18px;
+    }
+
+    .subs-title {
+        font-size: 16px;
+    }
+}
+

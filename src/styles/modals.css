@@ -1,0 +1,608 @@
+/* Modal Styles */
+.auth-modal {
+    background-color: #0C0F2D;
+    padding: 65px 60px;
+    border-radius: 32px;
+}
+
+.auth-modal .email-icon {
+    max-width: 140px;
+    max-height: 140px;
+}
+
+.auth-modal .content {
+    margin-top: 24px;
+}
+
+.auth-modal .content .title {
+    font-family: var(--popping);
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.auth-modal .content p {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 15px 0 35px;
+}
+
+.auth-modal .content .sign-btn {
+    font-family: var(--popping);
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #4361EE;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 17px 22px;
+}
+
+.data-source-modal {
+    background-color: #0C0F2D;
+    padding: 5px 60px 65px 60px;
+    border-radius: 32px;
+}
+
+.data-source-modal label {
+    font-size: 18px;
+    color: #AEB9E1;
+}
+
+.data-source-modal p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.data-source-modal .text-view {
+    border-bottom: 2px solid #AEB9E180;
+    margin: 20px 0;
+}
+
+.close-view {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.close-icn {
+    background-color: #526EF2;
+    padding: 8px 12px 11px 12px;
+    border-radius: 50px;
+    margin: 20px 30px 0 0;
+    color: #fff;
+}
+
+.close-icn img {
+    height: 14px;
+    width: 14px;
+}
+
+.data-source-btn {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #4361EE;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 17px 22px;
+}
+
+.delete-modal-title {
+    font-family: var(--popping);
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px !important;
+}
+
+.delete-modal-body {
+    padding: 35px 0 20px;
+}
+
+.delete-modal-footer {
+    padding: 0px 0 35px;
+}
+
+.user-modal .modal-dialog {
+    max-width: 600px !important;
+}
+
+.user-modal .modal-content {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    background-color: rgba(1, 3, 23, 1);
+    background-image: url("/src/assets/images/home/contact-background.png");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.user-modal .modal-header {
+    padding: 25px 22px 0 0;
+}
+
+.user-modal .modal-body .delete-modal-title {
+    font-size: 30px;
+}
+
+.user-modal .modal-body .content p {
+    font-weight: 300;
+}
+
+.user-modal .modal-body .add-input .form-label {
+    font-weight: 400;
+}
+
+.user-modal .modal-body .add-input input,
+.user-modal .modal-body .add-input select {
+    font-weight: 300 !important;
+    background: rgba(75, 104, 240, 0.16);
+    border: 1px solid rgb(73 72 72 / 27%);
+}
+
+.user-modal .modal-body .add-input select option {
+    background: rgba(75, 104, 240, 0.16);
+    color: #000;
+}
+
+.user-modal .modal-body .add-input span {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+}
+
+.user-modal .modal-body .save-button,
+.user-modal .modal-body .cancel-button {
+    max-width: 48%;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.user-modal .modal-header .btn-close {
+    background: rgba(75, 104, 240, 0.16) !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    padding: 0 !important;
+    opacity: 1;
+    position: relative;
+}
+
+.user-modal .modal-header .btn-close::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-image: url("../assets/images/close-btn.png");
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+}
+
+.user-modal .modal-header .btn-close {
+    box-shadow: none;
+}
+
+.custom-tooltip {
+    position: absolute;
+    max-width: 100% !important;
+    width: auto;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 1.6rem;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .auth-modal {
+        padding: 55px 50px;
+        border-radius: 28px;
+    }
+
+    .auth-modal .email-icon {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .auth-modal .content .title {
+        font-size: 26px;
+    }
+
+    .auth-modal .content p {
+        font-size: 18px;
+        margin: 12px 0 30px;
+    }
+
+    .auth-modal .content .sign-btn {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .data-source-modal {
+        padding: 5px 50px 55px 50px;
+        border-radius: 28px;
+    }
+
+    .data-source-modal label {
+        font-size: 16px;
+    }
+
+    .data-source-modal p {
+        font-size: 16px;
+    }
+
+    .data-source-btn {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .delete-modal-title {
+        font-size: 20px;
+    }
+
+    .user-modal .modal-body .delete-modal-title {
+        font-size: 26px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .auth-modal {
+        padding: 45px 40px;
+        border-radius: 24px;
+    }
+
+    .auth-modal .email-icon {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .auth-modal .content .title {
+        font-size: 22px;
+    }
+
+    .auth-modal .content p {
+        font-size: 16px;
+        margin: 10px 0 25px;
+    }
+
+    .auth-modal .content .sign-btn {
+        font-size: 18px;
+        padding: 13px 18px;
+    }
+
+    .data-source-modal {
+        padding: 5px 40px 45px 40px;
+        border-radius: 24px;
+    }
+
+    .data-source-modal label {
+        font-size: 15px;
+    }
+
+    .data-source-modal p {
+        font-size: 15px;
+    }
+
+    .data-source-btn {
+        font-size: 16px;
+        padding: 13px 18px;
+    }
+
+    .delete-modal-title {
+        font-size: 18px;
+    }
+
+    .delete-modal-body {
+        padding: 30px 0 18px;
+    }
+
+    .delete-modal-footer {
+        padding: 0px 0 30px;
+    }
+
+    .user-modal .modal-dialog {
+        max-width: 550px !important;
+    }
+
+    .user-modal .modal-body .delete-modal-title {
+        font-size: 24px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .auth-modal {
+        padding: 35px 30px;
+        border-radius: 20px;
+    }
+
+    .auth-modal .email-icon {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .auth-modal .content .title {
+        font-size: 20px;
+    }
+
+    .auth-modal .content p {
+        font-size: 14px;
+        margin: 8px 0 20px;
+    }
+
+    .auth-modal .content .sign-btn {
+        font-size: 16px;
+        padding: 11px 16px;
+    }
+
+    .data-source-modal {
+        padding: 5px 30px 35px 30px;
+        border-radius: 20px;
+    }
+
+    .data-source-modal label {
+        font-size: 14px;
+    }
+
+    .data-source-modal p {
+        font-size: 14px;
+    }
+
+    .data-source-btn {
+        font-size: 15px;
+        padding: 11px 16px;
+    }
+
+    .delete-modal-title {
+        font-size: 16px;
+    }
+
+    .delete-modal-body {
+        padding: 25px 0 15px;
+    }
+
+    .delete-modal-footer {
+        padding: 0px 0 25px;
+    }
+
+    .user-modal .modal-dialog {
+        max-width: 500px !important;
+    }
+
+    .user-modal .modal-header {
+        padding: 20px 18px 0 0;
+    }
+
+    .user-modal .modal-body .delete-modal-title {
+        font-size: 22px;
+    }
+
+    .user-modal .modal-header .btn-close {
+        width: 35px;
+        height: 35px;
+    }
+
+    .custom-tooltip {
+        font-size: 12px !important;
+        padding: 8px;
+        line-height: 1.4rem;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .auth-modal {
+        padding: 30px 25px;
+        border-radius: 18px;
+    }
+
+    .auth-modal .email-icon {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .auth-modal .content .title {
+        font-size: 18px;
+    }
+
+    .auth-modal .content p {
+        font-size: 13px;
+        margin: 6px 0 18px;
+    }
+
+    .auth-modal .content .sign-btn {
+        font-size: 14px;
+        padding: 10px 14px;
+        width: 100%;
+    }
+
+    .data-source-modal {
+        padding: 5px 25px 30px 25px;
+        border-radius: 18px;
+    }
+
+    .data-source-modal label {
+        font-size: 13px;
+    }
+
+    .data-source-modal p {
+        font-size: 13px;
+    }
+
+    .data-source-btn {
+        font-size: 14px;
+        padding: 10px 14px;
+        width: 100%;
+    }
+
+    .delete-modal-title {
+        font-size: 15px;
+    }
+
+    .delete-modal-body {
+        padding: 20px 0 12px;
+    }
+
+    .delete-modal-footer {
+        padding: 0px 0 20px;
+    }
+
+    .user-modal .modal-dialog {
+        max-width: 90% !important;
+        margin: 10px auto;
+    }
+
+    .user-modal .modal-content {
+        border-radius: 15px;
+    }
+
+    .user-modal .modal-header {
+        padding: 18px 15px 0 0;
+    }
+
+    .user-modal .modal-body .delete-modal-title {
+        font-size: 20px;
+    }
+
+    .user-modal .modal-header .btn-close {
+        width: 32px;
+        height: 32px;
+    }
+
+    .custom-tooltip {
+        font-size: 11px !important;
+        padding: 6px;
+        line-height: 1.3rem;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .auth-modal {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .auth-modal .email-icon {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .auth-modal .content .title {
+        font-size: 16px;
+    }
+
+    .auth-modal .content p {
+        font-size: 12px;
+        margin: 5px 0 15px;
+    }
+
+    .auth-modal .content .sign-btn {
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+
+    .data-source-modal {
+        padding: 5px 20px 25px 20px;
+        border-radius: 15px;
+    }
+
+    .data-source-modal label {
+        font-size: 12px;
+    }
+
+    .data-source-modal p {
+        font-size: 12px;
+    }
+
+    .data-source-btn {
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+
+    .delete-modal-title {
+        font-size: 14px;
+    }
+
+    .delete-modal-body {
+        padding: 18px 0 10px;
+    }
+
+    .delete-modal-footer {
+        padding: 0px 0 18px;
+    }
+
+    .user-modal .modal-dialog {
+        max-width: 95% !important;
+        margin: 5px auto;
+    }
+
+    .user-modal .modal-content {
+        border-radius: 12px;
+    }
+
+    .user-modal .modal-header {
+        padding: 15px 12px 0 0;
+    }
+
+    .user-modal .modal-body .delete-modal-title {
+        font-size: 18px;
+    }
+
+    .user-modal .modal-header .btn-close {
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-tooltip {
+        font-size: 10px !important;
+        padding: 5px;
+        line-height: 1.2rem;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .auth-modal {
+        padding: 20px 15px;
+    }
+
+    .auth-modal .email-icon {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .auth-modal .content .title {
+        font-size: 14px;
+    }
+
+    .data-source-modal {
+        padding: 5px 15px 20px 15px;
+    }
+
+    .user-modal .modal-body .delete-modal-title {
+        font-size: 16px;
+    }
+}
+

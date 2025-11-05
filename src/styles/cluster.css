@@ -1,0 +1,939 @@
+/* Cluster Component Styles */
+.add-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--popping);
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px !important;
+}
+
+.add-section {
+    border-radius: 15px;
+}
+
+.main-add-cluster {
+    border-radius: 1%;
+    background: #0C0F2D;
+    padding: 30px 0px;
+}
+
+.add-content-section {
+    background: #0C0F2D;
+    padding: 20px;
+    margin-inline: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cluster-section-title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px !important;
+    color: #fff;
+}
+
+.add-section-background {
+    background-image: url("../assets/images/create-profile-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100% !important;
+}
+
+.workspace-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.workspace-title {
+    font-size: 22px;
+    margin: 0;
+    font-family: var(--popping);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #0C0F2D;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}
+
+.edit-icon {
+    width: 28px;
+    margin-right: 5px;
+}
+
+.data-source-view {
+    background-color: #010317;
+    border-radius: 22px;
+    padding: 34px 54px;
+}
+
+.data-source-title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.subnet-view {
+    background: #010317;
+    border-radius: 10px;
+    padding: 20px 20px 25px;
+}
+
+
+.subnet-list {
+    background-color: #F5F5F9;
+    color: #000;
+    padding: 15px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.subnet-view .add-input input {
+    background: rgba(12, 15, 45, 1);
+}
+
+.subnet-view .add-input .input-delete {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    color: #6c757d;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.jdbc-code,
+.datatitan-code {
+    background: #060920;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+    word-break: break-all;
+}
+
+.jdbc-section,
+.datatitan-section {
+    padding: 16px 0px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Cluster Details */
+
+.cluster_inner_detail {
+    padding: 20px 25px 0px 40px;
+}
+
+.cluster_detail .add-section {
+    margin-bottom: 25px;
+}
+
+.cluster_detail .add-section .workspace-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cluster_detail .add-section .workspace-title {
+    font-size: 22px;
+    margin: 0;
+}
+
+.cluster_detail .add-section .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #0C0F2D;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.cluster_detail .add-section .back-button:hover {
+    opacity: 0.8;
+}
+
+.cluster_detail .add-section .add-title {
+    position: relative;
+    padding-left: 28px;
+    margin: 10px 0 15px;
+}
+
+.cluster_detail .add-section .add-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: #fce283;
+    border-radius: 50%;
+}
+
+.cluster_detail .top_btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cluster_detail .top_btn .detail-btn {
+    background: #0c0f2d;
+    color: #fff;
+    border-radius: 6px;
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 15px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cluster_detail .content-section .second .fisrt {
+    margin-bottom: 25px;
+}
+
+.cluster_detail .content-section .second .fisrt .table-title {
+    font-size: 18px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.cluster_detail .content-section .second .fisrt .filter {
+    background: #0c0f2d;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 10px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cluster_detail .content-section .second .second {
+    border-radius: 10px;
+}
+
+.cluster_detail .content-section .second .second .table-title {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+.cluster_detail .content-section .second .second .table-second {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.cluster_detail .content-section .second .second table {
+    width: 100%;
+    margin-bottom: 35px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.cluster_detail .content-section .second .second table:last-child {
+    margin-bottom: 0;
+}
+
+.cluster_detail .content-section .second .second table thead tr th {
+    background: #0c0f2d;
+    color: rgb(161 161 161);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 20px;
+    text-align: left;
+}
+
+.cluster_detail .content-section .second .second table thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cluster_detail .content-section .second .second table thead th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cluster_detail .content-section .second .second table tbody td {
+    padding: 18px 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cluster_detail .content-section .second .second table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.cluster_detail .content-section .second .second table .running,
+.cluster_detail .content-section .second .second table .enabled,
+.cluster_detail .content-section .second .second table .encryption {
+    position: relative;
+    padding-left: 32px;
+}
+
+.cluster_detail .content-section .second .second table .running::before,
+.cluster_detail .content-section .second .second table .enabled::before,
+.cluster_detail .content-section .second .second table .encryption::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.cluster_detail .content-section .second .second table .running.green::before,
+.cluster_detail .content-section .second .second table .enabled.green::before,
+.cluster_detail .content-section .second .second table .encryption.green::before {
+    background-color: #00e300;
+}
+
+.cluster_detail .content-section .second .second table .running.red::before,
+.cluster_detail .content-section .second .second table .enabled.red::before,
+.cluster_detail .content-section .second .second table .encryption.red::before {
+    background-color: #ff1616;
+}
+
+.layout .content .outlet .title h3 {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.layout .content .outlet .title p {
+    font-family: var(--popping);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .add-title {
+        font-size: 20px;
+    }
+
+    .main-add-cluster {
+        padding: 25px 0px;
+    }
+
+    .add-content-section {
+        padding: 18px;
+        margin-inline: 20px;
+    }
+
+    .cluster-section-title {
+        font-size: 18px;
+        margin-bottom: 25px !important;
+    }
+
+    .workspace-title {
+        font-size: 20px;
+    }
+
+    .data-source-view {
+        padding: 28px 40px;
+    }
+
+    .data-source-title {
+        font-size: 22px;
+    }
+
+    .cluster_inner_detail {
+        padding: 18px 20px 0px 35px;
+    }
+
+    .cluster_detail .add-section .workspace-title {
+        font-size: 20px;
+    }
+
+    .cluster_detail .content-section .second .second .table-title {
+        font-size: 18px;
+    }
+
+    .layout .content .outlet .title h3 {
+        font-size: 32px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .add-title {
+        font-size: 18px;
+    }
+
+    .main-add-cluster {
+        padding: 22px 0px;
+    }
+
+    .add-content-section {
+        padding: 15px;
+        margin-inline: 18px;
+    }
+
+    .cluster-section-title {
+        font-size: 16px;
+        margin-bottom: 22px !important;
+    }
+
+    .workspace-header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .workspace-title {
+        font-size: 18px;
+    }
+
+    .back-button {
+        font-size: 13px;
+    }
+
+    .data-source-view {
+        padding: 24px 32px;
+        border-radius: 18px;
+    }
+
+    .data-source-title {
+        font-size: 20px;
+    }
+
+    .subnet-view {
+        padding: 18px 18px 22px;
+    }
+
+    .cluster_inner_detail {
+        padding: 15px 18px 0px 30px;
+    }
+
+    .cluster_detail .add-section .workspace-title {
+        font-size: 18px;
+    }
+
+    .cluster_detail .top_btn .detail-btn {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .table-title {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .filter {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .cluster_detail .content-section .second .second .table-title {
+        font-size: 17px;
+    }
+
+    .cluster_detail .content-section .second .second .table-second {
+        font-size: 13px;
+    }
+
+    .cluster_detail .content-section .second .second table thead tr th {
+        font-size: 14px;
+        padding: 14px 18px;
+    }
+
+    .cluster_detail .content-section .second .second table tbody td {
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .layout .content .outlet .title h3 {
+        font-size: 28px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .add-title {
+        font-size: 16px;
+    }
+
+    .main-add-cluster {
+        padding: 20px 0px;
+    }
+
+    .add-content-section {
+        padding: 15px;
+        margin-inline: 15px;
+        border-radius: 12px;
+    }
+
+    .cluster-section-title {
+        font-size: 15px;
+        margin-bottom: 20px !important;
+    }
+
+    .workspace-header {
+        margin-bottom: 15px;
+    }
+
+    .workspace-title {
+        font-size: 16px;
+    }
+
+    .back-button {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .data-source-view {
+        padding: 20px 25px;
+        border-radius: 15px;
+    }
+
+    .data-source-title {
+        font-size: 18px;
+    }
+
+    .subnet-view {
+        padding: 15px 15px 20px;
+    }
+
+    .subnet-list {
+        padding: 12px 12px;
+        font-size: 13px;
+    }
+
+    .jdbc-code,
+    .datatitan-code {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .cluster_inner_detail {
+        padding: 12px 15px 0px 20px;
+    }
+
+    .cluster_detail .add-section {
+        margin-bottom: 20px;
+    }
+
+    .cluster_detail .add-section .workspace-header {
+        margin-bottom: 15px;
+    }
+
+    .cluster_detail .add-section .workspace-title {
+        font-size: 16px;
+    }
+
+    .cluster_detail .add-section .add-title {
+        padding-left: 24px;
+        margin: 8px 0 12px;
+    }
+
+    .cluster_detail .add-section .add-title::before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .cluster_detail .top_btn {
+        gap: 10px;
+    }
+
+    .cluster_detail .top_btn .detail-btn {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .cluster_detail .content-section .second .fisrt {
+        margin-bottom: 20px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .table-title {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .filter {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .cluster_detail .content-section .second .second .table-title {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .cluster_detail .content-section .second .second .table-second {
+        font-size: 12px;
+    }
+
+    .cluster_detail .content-section .second .second table {
+        margin-bottom: 28px;
+    }
+
+    .cluster_detail .content-section .second .second table thead tr th {
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+
+    .cluster_detail .content-section .second .second table tbody td {
+        padding: 14px 16px;
+        font-size: 13px;
+    }
+
+    .cluster_detail .content-section .second .second table .running,
+    .cluster_detail .content-section .second .second table .enabled,
+    .cluster_detail .content-section .second .second table .encryption {
+        padding-left: 28px;
+    }
+
+    .cluster_detail .content-section .second .second table .running::before,
+    .cluster_detail .content-section .second .second table .enabled::before,
+    .cluster_detail .content-section .second .second table .encryption::before {
+        left: 8px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .layout .content .outlet .title h3 {
+        font-size: 24px;
+    }
+
+    .layout .content .outlet .title p {
+        font-size: 12px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .add-title {
+        font-size: 15px;
+    }
+
+    .main-add-cluster {
+        padding: 18px 0px;
+    }
+
+    .add-content-section {
+        padding: 12px;
+        margin-inline: 12px;
+        border-radius: 10px;
+    }
+
+    .cluster-section-title {
+        font-size: 14px;
+        margin-bottom: 18px !important;
+    }
+
+    .workspace-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .workspace-title {
+        font-size: 15px;
+    }
+
+    .back-button {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .data-source-view {
+        padding: 18px 20px;
+        border-radius: 12px;
+    }
+
+    .data-source-title {
+        font-size: 16px;
+    }
+
+    .subnet-view {
+        padding: 12px 12px 18px;
+    }
+
+    .subnet-list {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .jdbc-code,
+    .datatitan-code {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    .cluster_inner_detail {
+        padding: 10px 12px 0px 15px;
+    }
+
+    .cluster_detail .add-section {
+        margin-bottom: 18px;
+    }
+
+    .cluster_detail .add-section .workspace-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .cluster_detail .add-section .workspace-title {
+        font-size: 15px;
+    }
+
+    .cluster_detail .add-section .back-button {
+        font-size: 11px;
+    }
+
+    .cluster_detail .add-section .add-title {
+        padding-left: 20px;
+        margin: 6px 0 10px;
+        font-size: 16px;
+    }
+
+    .cluster_detail .add-section .add-title::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cluster_detail .top_btn {
+        gap: 8px;
+    }
+
+    .cluster_detail .top_btn .detail-btn {
+        font-size: 11px;
+        padding: 7px 12px;
+    }
+
+    .cluster_detail .content-section .second .fisrt {
+        margin-bottom: 18px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .table-title {
+        font-size: 14px;
+        margin-right: 12px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .filter {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .cluster_detail .content-section .second .second .table-title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cluster_detail .content-section .second .second .table-second {
+        font-size: 11px;
+    }
+
+    .cluster_detail .content-section .second .second table {
+        margin-bottom: 22px;
+    }
+
+    .cluster_detail .content-section .second .second table thead tr th {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .cluster_detail .content-section .second .second table tbody td {
+        padding: 12px 12px;
+        font-size: 12px;
+    }
+
+    .layout .content .outlet .title h3 {
+        font-size: 20px;
+    }
+
+    .layout .content .outlet .title p {
+        font-size: 11px;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .add-title {
+        font-size: 14px;
+    }
+
+    .main-add-cluster {
+        padding: 15px 0px;
+    }
+
+    .add-content-section {
+        padding: 10px;
+        margin-inline: 10px;
+        border-radius: 8px;
+    }
+
+    .cluster-section-title {
+        font-size: 13px;
+        margin-bottom: 15px !important;
+    }
+
+    .workspace-title {
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 10px;
+        gap: 5px;
+        padding: 5px 8px;
+    }
+
+    .data-source-view {
+        padding: 15px 15px;
+        border-radius: 10px;
+    }
+
+    .data-source-title {
+        font-size: 14px;
+    }
+
+    .subnet-view {
+        padding: 10px 10px 15px;
+    }
+
+    .subnet-list {
+        padding: 8px 8px;
+        font-size: 11px;
+    }
+
+    .jdbc-code,
+    .datatitan-code {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .cluster_inner_detail {
+        padding: 8px 10px 0px 12px;
+    }
+
+    .cluster_detail .add-section .workspace-title {
+        font-size: 14px;
+    }
+
+    .cluster_detail .add-section .add-title {
+        padding-left: 18px;
+        margin: 5px 0 8px;
+        font-size: 14px;
+    }
+
+    .cluster_detail .add-section .add-title::before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .cluster_detail .top_btn .detail-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .table-title {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .cluster_detail .content-section .second .fisrt .filter {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .cluster_detail .content-section .second .second .table-title {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .cluster_detail .content-section .second .second .table-second {
+        font-size: 10px;
+    }
+
+    .cluster_detail .content-section .second .second table thead tr th {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    .cluster_detail .content-section .second .second table tbody td {
+        padding: 10px 10px;
+        font-size: 11px;
+    }
+
+    .layout .content .outlet .title h3 {
+        font-size: 18px;
+    }
+
+    .layout .content .outlet .title p {
+        font-size: 10px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .add-content-section {
+        margin-inline: 8px;
+    }
+
+    .cluster_inner_detail {
+        padding: 6px 8px 0px 10px;
+    }
+
+    .cluster_detail .content-section .second .second table thead tr th {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+
+    .cluster_detail .content-section .second .second table tbody td {
+        padding: 8px 8px;
+        font-size: 10px;
+    }
+}
+

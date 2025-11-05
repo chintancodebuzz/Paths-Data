@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { sendInvitation, getRoles } from "../../../services/api";
 import "./OTPVerify.css"
-
+import "../../../styles/modals.css";
+import "../../../styles/forms.css";
 const initialState = {
   name: "",
   email_id: "",

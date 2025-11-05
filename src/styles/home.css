@@ -1,0 +1,754 @@
+/* Home Component Styles */
+.digital-ecosystem {
+    margin-top: 30px;
+}
+
+.home-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    gap: 2.5rem;
+}
+
+.home-card-view {
+    background-color: #030625;
+    padding: 21px 25px 14px 25px;
+    border-radius: 15px;
+    height: 100%;
+    border: 1px solid #526EF2;
+    cursor: pointer;
+}
+
+.digital-title {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.digital-desc {
+    font-family: var(--popping);
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 175%;
+}
+
+.home-main-view {
+    background-color: #030625;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.welcome-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 30px 50px 0px;
+}
+
+.welcome-title {
+    font-size: 37px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 136%;
+}
+
+.welcome-desc {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 175%;
+}
+
+.welcome-card {
+    display: flex;
+    gap: 10px;
+}
+
+.card-one {
+    background-color: #5C79FF;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.card-two {
+    background-color: #284EFF;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.card-three {
+    background-color: #001BA0;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dummy-box {
+    margin-bottom: 70px;
+}
+
+@media (max-width:1500px) {
+    .dummy-box {
+        margin-bottom: 40px;
+    }
+
+    .welcome-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px 0px 50px 0px;
+    }
+}
+
+.card-tecnical {
+    padding: 14px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    padding: 14px;
+}
+
+.technical-btn {
+    font-family: var(--popping);
+    font-size: 16px;
+    font-weight: 400;
+    background: #A7BCFF47;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 8px 5px;
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.technical-btn p {
+    padding-top: 5px;
+}
+
+.tec-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    margin-bottom: 14px;
+    color: #fff;
+}
+
+.tec-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 175%;
+    text-align: left;
+    display: flex;
+    color: #fff;
+}
+
+.second-view-title {
+    font-size: 28px;
+    line-height: 175%;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+}
+
+.second-view-desc {
+    font-size: 16px;
+    line-height: 175%;
+    color: #fff;
+    font-weight: 400;
+}
+
+.enbeld-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Count Cards */
+.count .col-lg-4 .card {
+    background-color: #FF6466;
+    color: #fff;
+    padding: 35px 25px;
+    border-radius: 15px;
+}
+
+.count .col-lg-4 .card .card-body {
+    padding: 0;
+}
+
+.count .col-lg-4 .card .card-body .card-title {
+    font-family: var(--popping);
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.count .col-lg-4 .card .card-body .card-text {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: var(--popping);
+}
+
+.count .col-lg-4:nth-child(2) .card,
+.count .col-lg-4:nth-child(3) .card {
+    background-color: rgba(12, 15, 45, 1);
+}
+
+.count .col-lg-4:nth-child(2) .card .card-title,
+.count .col-lg-4:nth-child(3) .card .card-title {
+    color: rgba(255, 255, 255, 1);
+}
+
+.count .col-lg-4:nth-child(2) .card .card-text {
+    color: #4B68F0;
+}
+
+.count .col-lg-4:nth-child(3) .card .card-text {
+    color: #FF339C;
+}
+
+.card-view {
+    background-color: rgba(12, 15, 45, 1);
+    padding: 21px 25px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.title1 {
+    font-family: var(--popping);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+}
+
+.description {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.chart-background {
+    background-color: rgba(12, 15, 45, 1);
+    border-radius: 15px;
+    margin: 30px 0;
+    padding: 30px 25px;
+    overflow-x: auto;
+}
+
+.apexcharts-legend-text {
+    padding-right: 20px;
+    font-family: var(--popping) !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+.apexcharts-toolbar {
+    top: 7px !important;
+    right: 0px !important;
+}
+
+.row-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.apexcharts-text tspan {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.apexcharts-legend-marker {
+    margin-right: 10px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - All Screen Sizes
+   Desktop design (1400px+) remains unchanged
+   ============================================ */
+
+/* Large Desktops (1400px and above) - Default */
+@media (min-width: 1400px) {
+    /* Desktop design stays exactly as defined above */
+}
+
+/* Small Desktops / Large Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .home-card-grid {
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+
+    .home-card-view {
+        padding: 18px 22px 12px 22px;
+    }
+
+    .digital-title {
+        font-size: 18px;
+    }
+
+    .digital-desc {
+        font-size: 13px;
+    }
+
+    .home-main-view {
+        padding: 40px;
+    }
+
+    .welcome-title {
+        font-size: 32px;
+    }
+
+    .welcome-desc {
+        font-size: 15px;
+    }
+
+    .second-view-title {
+        font-size: 24px;
+    }
+
+    .second-view-desc {
+        font-size: 15px;
+    }
+}
+
+/* Laptops / MacBook (992px - 1199px) */
+@media (max-width: 1199px) {
+    .digital-ecosystem {
+        margin-top: 25px;
+    }
+
+    .home-card-grid {
+        gap: 1.8rem;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+    .home-card-view {
+        padding: 16px 20px 12px 20px;
+    }
+
+    .digital-title {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .digital-desc {
+        font-size: 12px;
+    }
+
+    .home-main-view {
+        padding: 35px;
+    }
+
+    .welcome-box {
+        padding: 40px 25px 40px 0px;
+    }
+
+    .welcome-title {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    .welcome-desc {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .technical-btn {
+        font-size: 14px;
+        padding: 7px 4px;
+        margin-bottom: 12px;
+    }
+
+    .tec-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .tec-description {
+        font-size: 13px;
+    }
+
+    .second-view-title {
+        font-size: 22px;
+    }
+
+    .second-view-desc {
+        font-size: 14px;
+    }
+
+    .count .col-lg-4 .card {
+        padding: 28px 20px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-title {
+        font-size: 13px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-text {
+        font-size: 20px;
+    }
+
+    .card-view {
+        padding: 18px 20px;
+    }
+
+    .chart-background {
+        padding: 25px 20px;
+        margin: 25px 0;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .digital-ecosystem {
+        margin-top: 20px;
+    }
+
+    .home-card-grid {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .home-card-view {
+        padding: 15px 18px 10px 18px;
+        border-radius: 12px;
+    }
+
+    .digital-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .digital-desc {
+        font-size: 11px;
+    }
+
+    .home-main-view {
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .welcome-box {
+        padding: 35px 20px 35px 0px;
+    }
+
+    .welcome-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .welcome-desc {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .welcome-card {
+        gap: 8px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .technical-btn {
+        font-size: 13px;
+        padding: 6px 4px;
+        margin-bottom: 10px;
+    }
+
+    .tec-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .tec-description {
+        font-size: 12px;
+    }
+
+    .second-view-title {
+        font-size: 20px;
+    }
+
+    .second-view-desc {
+        font-size: 13px;
+    }
+
+    .count .col-lg-4 .card {
+        padding: 25px 18px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-title {
+        font-size: 12px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-text {
+        font-size: 18px;
+    }
+
+    .card-view {
+        padding: 16px 18px;
+    }
+
+    .chart-background {
+        padding: 20px 18px;
+        margin: 20px 0;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .digital-ecosystem {
+        margin-top: 15px;
+    }
+
+    .home-card-grid {
+        gap: 1.2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .home-card-view {
+        padding: 14px 16px 10px 16px;
+        border-radius: 10px;
+    }
+
+    .digital-title {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .digital-desc {
+        font-size: 10px;
+    }
+
+    .home-main-view {
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .welcome-box {
+        padding: 25px 15px 25px 0px;
+    }
+
+    .welcome-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .welcome-desc {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .welcome-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three {
+        width: 100%;
+    }
+
+    .dummy-box {
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .technical-btn {
+        font-size: 12px;
+        padding: 5px 4px;
+        margin-bottom: 8px;
+    }
+
+    .tec-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .tec-description {
+        font-size: 11px;
+    }
+
+    .second-view-title {
+        font-size: 18px;
+    }
+
+    .second-view-desc {
+        font-size: 12px;
+    }
+
+    .count .col-lg-4 .card {
+        padding: 20px 15px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-title {
+        font-size: 11px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-text {
+        font-size: 16px;
+    }
+
+    .card-view {
+        padding: 14px 16px;
+    }
+
+    .chart-background {
+        padding: 18px 15px;
+        margin: 18px 0;
+    }
+
+    .apexcharts-legend-text {
+        font-size: 12px !important;
+        padding-right: 15px;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .digital-ecosystem {
+        margin-top: 12px;
+    }
+
+    .home-card-grid {
+        gap: 1rem;
+    }
+
+    .home-card-view {
+        padding: 12px 14px 8px 14px;
+        border-radius: 8px;
+    }
+
+    .digital-title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .digital-desc {
+        font-size: 9px;
+    }
+
+    .home-main-view {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .welcome-box {
+        padding: 20px 12px 20px 0px;
+    }
+
+    .welcome-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .welcome-desc {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .dummy-box {
+        margin-bottom: 25px;
+    }
+
+    .card-title {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .technical-btn {
+        font-size: 11px;
+        padding: 4px 3px;
+        margin-bottom: 6px;
+    }
+
+    .tec-title {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .tec-description {
+        font-size: 10px;
+    }
+
+    .second-view-title {
+        font-size: 16px;
+    }
+
+    .second-view-desc {
+        font-size: 11px;
+    }
+
+    .count .col-lg-4 .card {
+        padding: 18px 12px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-title {
+        font-size: 10px;
+    }
+
+    .count .col-lg-4 .card .card-body .card-text {
+        font-size: 14px;
+    }
+
+    .card-view {
+        padding: 12px 14px;
+    }
+
+    .chart-background {
+        padding: 15px 12px;
+        margin: 15px 0;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .home-card-view {
+        padding: 10px 12px 6px 12px;
+    }
+
+    .digital-title {
+        font-size: 13px;
+    }
+
+    .welcome-title {
+        font-size: 16px;
+    }
+
+    .second-view-title {
+        font-size: 14px;
+    }
+}
+

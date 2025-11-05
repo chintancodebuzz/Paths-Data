@@ -2,12 +2,12 @@
 import { Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import WorkspaceHome from "../pages/workspaces/home/WorkspaceHome";
-import AddCluster from "../pages/cluster/AddCluster";
 import ClusterDetails from "../pages/cluster/ClusterDetails";
 import CloudResourceIAMRole from "../pages/cloudResourceIAMRole/CloudResourceIAMRole";
 import AddCloudResourceIAMRole from "../pages/cloudResourceIAMRole/AddCloudResourceIAMRole";
 import WorkspaceDashboardLayout from "../layouts/workspace/workspaceDashboardLayout";
 import Cluster from "../pages/cluster/Cluster";
+import AddCluster from "../pages/cluster/AddCluster";
 
 export const WorkspaceRoutes = (
   <Route

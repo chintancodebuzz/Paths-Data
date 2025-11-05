@@ -3,7 +3,6 @@ import { Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import DashboardLayout from "../layouts/DashboardLayout";
 
-import Network from "../pages/network/Network";
 import NewHome from "../pages/home/NewHome";
 import Home from "../pages/home/Home";
 import AddNetwork from "../pages/network/AddNetwork";
@@ -14,6 +13,7 @@ import CrossAccountIAMRole from "../pages/network/crossAccountIAMRoles/CrossAcco
 import AddCrossAccountIAMRole from "../pages/network/crossAccountIAMRoles/AddCrossAccountIAMRole";
 import Workspace from "../pages/workspaces/Workspace";
 import AddWorkspace from "../pages/workspaces/AddWorkspace";
+import Network from "../pages/network/Network";
 
 export const DashboardRoutes = (
   <Route

@@ -71,6 +71,6 @@ const WorkspaceDashboardLayout = () => {
       />
     </div>
   );
-};
+};   
 
 export default WorkspaceDashboardLayout;

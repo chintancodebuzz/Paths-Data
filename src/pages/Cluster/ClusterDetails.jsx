@@ -14,7 +14,7 @@ const ClusterDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // ✅ static data
+  // ✅ static data   
   const [getClusterDetail, setGetClusterDetail] = useState({
     cluster_name: "Demo-Cluster",
     status: "running",

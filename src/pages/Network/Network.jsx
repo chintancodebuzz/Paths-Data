@@ -12,6 +12,7 @@ import editbtn from "../../assets/images/edit-btn.png";
 import deletebtn from "../../assets/images/delete-btn.png";
 import organization_family from "../../assets/images/organization_family.png";
 // import "./WorkspaceCreate.css";
+import "../../styles/tables.css";
 
 const Network = () => {
   const navigate = useNavigate();

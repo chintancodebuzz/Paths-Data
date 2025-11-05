@@ -11,7 +11,7 @@ import searchIcon from "../../assets/images/search.png";
 import workspaceArrow from "../../assets/images/workspace_arrow.png";
 import "../../styles/tables.css";
 
-const Workspace = () => {
+const Workspace = () => {  
   const navigate = useNavigate();
 
   const [workspaceData, setWorkspaceData] = useState([]);

@@ -1,7 +1,7 @@
 // src/routes/WorkspaceRoutes.jsx
 import { Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
-import WorkspaceHome from "../pages/workspace/home/WorkspaceHome";
+import WorkspaceHome from "../pages/workspaces/home/WorkspaceHome";
 import Cluster from "../pages/cluster/Cluster";
 import AddCluster from "../pages/cluster/AddCluster";
 import ClusterDetails from "../pages/cluster/ClusterDetails";

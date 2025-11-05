@@ -3,8 +3,6 @@ import { Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import DashboardLayout from "../layouts/DashboardLayout";
 
-import AddCrossAccountIAMRole from "../pages/network/crossAccountIAMRole/AddCrossAccountIAMRole";
-import CrossAccountIAMRole from "../pages/network/crossAccountIAMRole/CrossAccountIAMRole";
 import Workspace from "../pages/workspace/Workspace";
 import AddWorkspace from "../pages/workspace/AddWorkspace";
 import Network from "../pages/network/Network";
@@ -14,6 +12,8 @@ import AddNetwork from "../pages/network/AddNetwork";
 import Roles from "../pages/users/roles/Roles";
 import Users from "../pages/users/Users";
 import Setting from "../pages/setting/Setting";
+import CrossAccountIAMRole from "../pages/network/crossAccountIAMRoles/CrossAccountIAMRole";
+import AddCrossAccountIAMRole from "../pages/network/crossAccountIAMRoles/AddCrossAccountIAMRole";
 
 export const DashboardRoutes = (
   <Route

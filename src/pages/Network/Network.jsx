@@ -12,7 +12,7 @@ const Network = () => {
 
   // Static network data matching the image content
   const [networkData, setNetworkData] = useState([
-    {
+    {     
       id: "1",
       name: "Network 1",
       createdAt: "28 Oct, 2025",
